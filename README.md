@@ -1,4 +1,4 @@
 summaryPartsConverter
 =====================
 
-Convert summary parts output file into a useable cdv file
+Convert summary parts output file into a useable csv file
