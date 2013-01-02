@@ -1,0 +1,27 @@
+DCB
+Result Quantity,BL::BL,BL::BL_DCB-noHeat,DC1::DC1,DC2::DC2,noHS::noHS,20mmHS::20mmHS,Reference,Units
+Avg Temperature,82.915,69.226,78.35,78.383,86.6,85.763,N/A,Celsius
+RCB
+Result Quantity,BL::BL,BL::BL_DCB-noHeat,DC1::DC1,DC2::DC2,noHS::noHS,20mmHS::20mmHS,Reference,Units
+Avg Temperature,76.557,68.779,74.705,74.739,80.22,79.397,N/A,Celsius
+Antenna
+Result Quantity,BL::BL,BL::BL_DCB-noHeat,DC1::DC1,DC2::DC2,noHS::noHS,20mmHS::20mmHS,Reference,Units
+Avg Temperature,69.988,65.045,69.203,69.238,73.567,72.777,N/A,Celsius
+PCBA_fiberTray
+Result Quantity,BL::BL,BL::BL_DCB-noHeat,DC1::DC1,DC2::DC2,noHS::noHS,20mmHS::20mmHS,Reference,Units
+Avg Temperature,66.651,65.904,66.513,66.551,72.516,70.47,N/A,Celsius
+PCBA_SCB2
+Result Quantity,BL::BL,BL::BL_DCB-noHeat,DC1::DC1,DC2::DC2,noHS::noHS,20mmHS::20mmHS,Reference,Units
+Max Temperature,62.252,61.584,62.11,62.149,67.959,65.958,N/A,Celsius
+EDFA
+Result Quantity,BL::BL,BL::BL_DCB-noHeat,DC1::DC1,DC2::DC2,noHS::noHS,20mmHS::20mmHS,Reference,Units
+Avg Temperature,64.914,64.187,64.742,64.782,70.984,68.805,N/A,Celsius
+FSM_Housing
+Result Quantity,BL::BL,BL::BL_DCB-noHeat,DC1::DC1,DC2::DC2,noHS::noHS,20mmHS::20mmHS,Reference,Units
+Avg Temperature,62.771,60.712,62.901,62.938,66.184,65.352,N/A,Celsius
+actuator_upper
+Result Quantity,BL::BL,BL::BL_DCB-noHeat,DC1::DC1,DC2::DC2,noHS::noHS,20mmHS::20mmHS,Reference,Units
+Avg Temperature,62.967,60.793,63.098,63.137,66.384,65.549,N/A,Celsius
+air_internal
+Result Quantity,BL::BL,BL::BL_DCB-noHeat,DC1::DC1,DC2::DC2,noHS::noHS,20mmHS::20mmHS,Reference,Units
+Avg Temperature,61.888,59.687,61.869,61.906,65.384,64.519,N/A,Celsius
