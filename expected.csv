@@ -1,2 +1,6 @@
-Component,Quantity,Units,Design,Reference
-Comp,temp,C,1,n/a
+Component Header,Quantity type Header,Units Header,design1 header,design2 header,design3 header,Ref header
+component,quantity type,unit value,#,#,#,n/a
+component,quantity type,unit value,#,#,#,n/a
+component,quantity type,unit value,#,#,#,n/a
+component,quantity type,unit value,#,#,#,n/a
+component,quantity type,unit value,#,#,#,n/a
