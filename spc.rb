@@ -16,7 +16,7 @@ file_in.each_line do |line|
     vals = line.split(',')
     vals[1..-3].each do |v|
       row.push(v)
-    end    
+    end
 
   end
     file_out << row
