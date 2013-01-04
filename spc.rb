@@ -3,25 +3,24 @@ require 'csv'
 file_in = File.new('sp.csv')
 file_out = CSV.open('output.csv', 'w')
 
+row = []
+
 file_in.each_line do |line|
 
   case line
   when /^[^,]+$/
-  header = file_in.gets
-  file_out << [line.strip]
+    header = file_in.gets
+    row.push(line.strip)
+    next
   when /,/
-    comp = line.split(',')
-    comp[1..-3].each do |c|
-
-    file_out << [c]
-  end
+    vals = line.split(',')
+    row.push(vals[1..-3])    
 
   end
-
-
+    file_out << [row]
+    row = []
 
 end
-
 
 =begin
 
