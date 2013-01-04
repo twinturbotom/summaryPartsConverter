@@ -14,10 +14,12 @@ file_in.each_line do |line|
     next
   when /,/
     vals = line.split(',')
-    row.push(vals[1..-3])    
+    vals[1..-3].each do |v|
+      row.push(v)
+    end    
 
   end
-    file_out << [row]
+    file_out << row
     row = []
 
 end
