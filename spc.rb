@@ -1,8 +1,9 @@
+
 require 'csv'
 
 file_in = File.new('sp.csv')
 file_out = CSV.open('output.csv', 'w')
-
+file_out << ["Convert Summary Parts Output to clean CSV"]
 row = []
 
 file_in.each_line do |line|
