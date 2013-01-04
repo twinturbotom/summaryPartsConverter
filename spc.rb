@@ -14,7 +14,7 @@ file_in.each_line do |line|
     next
   when /,/
     vals = line.split(',')
-    #row.push(vals[0],vals[-1]) #adds legend but wrongly
+    row.push(vals[0], vals[-1].strip)
     vals[1..-3].each do |v|
       row.push(v)
     end
