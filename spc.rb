@@ -11,7 +11,10 @@ file_in.each_line do |line|
   file_out << [line.strip]
   when /,/
     comp = line.split(',')
-    file_out << [comp[1..-3]]
+    comp[1..-3].each do |c|
+
+    file_out << [c]
+  end
 
   end
 
