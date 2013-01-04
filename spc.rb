@@ -1,4 +1,22 @@
 require 'csv'
+
+def parse_sp(file_name)
+  section = []
+
+  File.foreach(file_name) do |line|
+    case line
+    when /^/
+
+
+    end
+
+end
+
+
+=begin
+
+
+require 'csv'
 require 'pp'
 
 
@@ -16,3 +34,4 @@ o << data.flat_map { |ary|
     ]
   }
 }
+=end
