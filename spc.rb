@@ -8,62 +8,19 @@ row = []
 file_in.each_line do |line|
 
   case line
-  when /^[^,]+$/
-    header = file_in.gets
-    row.push(line.strip)
+  when /^[^,]+$/ #Find a component (line with no comma)
+    header = file_in.gets #header is after component
+    row.push(line.strip) #add to row array
     next
-  when /,/
-    vals = line.split(',')
-    row.push(vals[0], vals[-1].strip)
-    vals[1..-3].each do |v|
-      row.push(v)
+  when /,/ #when a row had commas
+    vals = line.split(',') #split up into vals array
+    row.push(vals[0], vals[-1].strip) #add quantity and unit to row array
+    vals[1..-3].each do |v| #for values (excluding quanity, units, reference info)
+      row.push(v) #add values to row array
     end
 
   end
-    file_out << row
-    row = []
+    file_out << row #write the current row to csv file
+    row = [] #reset the row array to move on to the next component set
 
 end
-
-=begin
-
-require 'csv'
-require 'pp'
-
-f = File.new("sp.csv")
-o = CSV.open('output.csv', 'w')
-
-f.each_line do |l|
-
-  if l !~ /,/
-    #component = l.strip
-    o << [l.strip]
-    #o << [data,f.gets,'off2']
-  elsif l =~ /Quantity/
-    h = l.split(',')
-  else
-    o << ['comma']
-  end
-end
-
-=end
-
-=begin
-
-
-data = File.readlines('sp.csv').slice_before(/^[^,]+$/)
-
-pp data.flat_map { |ary|
-  component = ary[0].strip
-  ary[2..-1].map{ |a|
-    record = CSV.parse(a).flatten
-    [
-      component,
-      record.shift,
-      record.pop,
-      *record[0..-2]
-    ]
-  }
-}
-
-=end
