@@ -9,9 +9,12 @@ file_in.each_line do |line|
   when /^[^,]+$/
   header = file_in.gets
   file_out << [line.strip]
+  when /,/
+    comp = line.split(',')
+    file_out << [comp[1..-3]]
+
   end
-  comp_res = line.split(',')
-  file_out << [comp_res[1]]
+
 
 
 end
