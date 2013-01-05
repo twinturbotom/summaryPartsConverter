@@ -8,8 +8,8 @@ ps_c5,Avg Temperature,Celsius,90.78,93.439
 led_pcb,Avg Temperature,Celsius,77.525,87.079
 thermistor,Avg Temperature,Celsius,78.134,87.585
 led,Board Temp,Celsius,95.053,103.897
-Junction Temp,Celsius,151.025,159.869
-Case Temp,Celsius,116.255,124.463
+led,Junction Temp,Celsius,151.025,159.869
+led,Case Temp,Celsius,116.255,124.463
 fan_led,Fan Pressure,Pa,26.3067,26.9378
-Fan Vol Flow,ft3/min,7.10376,6.73325
-Avg Temperature,Celsius,53.398,65.7
+fan_led,Fan Vol Flow,ft3/min,7.10376,6.73325
+fan_led,Avg Temperature,Celsius,53.398,65.7

@@ -6,6 +6,7 @@ file_out = CSV.open('output.csv', 'w')
 header = []
 row = []
 
+
 file_in.each_line do |line|
 
   case line
@@ -20,12 +21,12 @@ file_in.each_line do |line|
       file_out << header 
 
     end
-
-    row.push(line.strip) #add to row array
+    @comp = line.to_s.strip
     next
   when /,/ #when a row had commas
+    puts @comp
     vals = line.split(',') #split up into vals array
-    row.push(vals[0], vals[-1].strip) #add quantity and unit to row array
+    row.push(@comp, vals[0], vals[-1].strip) #add quantity and unit to row array
     vals[1..-3].each do |v| #for values (excluding quanity, units, reference info)
       row.push(v) #add values to row array
     end
