@@ -1,6 +1,6 @@
 require 'csv'
 
-file_in = File.new('sp.csv')
+file_in = File.new('sp1.csv')
 file_out = CSV.open('output.csv', 'w')
 
 header = []
@@ -10,9 +10,9 @@ file_in.each_line do |line|
 
   case line
   when /^[^,]+$/ #Find a component (line with no comma)
-    comp_header = file_in.gets.split(',') #header is after component
+    comp_header = file_in.gets.split(',') #header is after component and is split into an arry
 
-    if header.empty?
+    if header.empty? #header
       header.push("Component", comp_header[0], comp_header[-1].strip)
       comp_header[1..-3].each do |h|
         header.push(h)

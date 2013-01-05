@@ -1,0 +1,34 @@
+pcb_top
+Result Quantity,DC3::DC3,DC3-domain::DC3-domain,Reference,Units
+Avg Temperature,64.11,66.666,N/A,Celsius
+pcb_btm
+Result Quantity,DC3::DC3,DC3-domain::DC3-domain,Reference,Units
+Avg Temperature,63.028,65.994,N/A,Celsius
+ps_pcb
+Result Quantity,DC3::DC3,DC3-domain::DC3-domain,Reference,Units
+Avg Temperature,86.514,91.644,N/A,Celsius
+ps_t1
+Result Quantity,DC3::DC3,DC3-domain::DC3-domain,Reference,Units
+Avg Temperature,95.769,98.621,N/A,Celsius
+ps_c3
+Result Quantity,DC3::DC3,DC3-domain::DC3-domain,Reference,Units
+Avg Temperature,82.133,87.157,N/A,Celsius
+ps_c5
+Result Quantity,DC3::DC3,DC3-domain::DC3-domain,Reference,Units
+Avg Temperature,90.78,93.439,N/A,Celsius
+led_pcb
+Result Quantity,DC3::DC3,DC3-domain::DC3-domain,Reference,Units
+Avg Temperature,77.525,87.079,N/A,Celsius
+thermistor
+Result Quantity,DC3::DC3,DC3-domain::DC3-domain,Reference,Units
+Avg Temperature,78.134,87.585,N/A,Celsius
+led
+Result Quantity,DC3::DC3,DC3-domain::DC3-domain,Reference,Units
+Board Temp,95.053,103.897,N/A,Celsius
+Junction Temp,151.025,159.869,N/A,Celsius
+Case Temp,116.255,124.463,N/A,Celsius
+fan_led
+Result Quantity,DC3::DC3,DC3-domain::DC3-domain,Reference,Units
+Fan Pressure,26.3067,26.9378,N/A,Pa
+Fan Vol Flow,7.10376,6.73325,N/A,ft3/min
+Avg Temperature,53.398,65.7,N/A,Celsius
