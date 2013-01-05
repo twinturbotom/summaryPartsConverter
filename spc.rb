@@ -1,16 +1,26 @@
-
 require 'csv'
 
 file_in = File.new('sp.csv')
 file_out = CSV.open('output.csv', 'w')
-file_out << ["Convert Summary Parts Output to clean CSV"]
+
+header = []
 row = []
 
 file_in.each_line do |line|
 
   case line
   when /^[^,]+$/ #Find a component (line with no comma)
-    header = file_in.gets #header is after component
+    comp_header = file_in.gets.split(',') #header is after component
+
+    if header.empty?
+      header.push("Component", comp_header[0], comp_header[-1].strip)
+      comp_header[1..-3].each do |h|
+        header.push(h)
+      end
+      file_out << header 
+
+    end
+
     row.push(line.strip) #add to row array
     next
   when /,/ #when a row had commas

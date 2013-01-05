@@ -1,4 +1,4 @@
-Convert Summary Parts Output to clean CSV
+Component,Result Quantity,Units,BL::BL,BL::BL_DCB-noHeat,DC1::DC1,DC2::DC2,noHS::noHS,20mmHS::20mmHS
 DCB,Avg Temperature,Celsius,82.915,69.226,78.35,78.383,86.6,85.763
 RCB,Avg Temperature,Celsius,76.557,68.779,74.705,74.739,80.22,79.397
 Antenna,Avg Temperature,Celsius,69.988,65.045,69.203,69.238,73.567,72.777
